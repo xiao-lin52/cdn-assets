@@ -134,3 +134,246 @@ html, body {
     padding: 0 8px;
   }
 }
+span.btn {
+  display: inline;
+}
+span.btn >a {
+  display: inline-block;
+  background: #2196f3;
+  color: #fff;
+  padding: 4px 4px 2px 4px;
+  margin: 2px;
+  line-height: 1.1;
+  border-radius: 2px;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+span.btn >a i {
+  margin-right: 2px;
+}
+span.btn >a:hover {
+  color: #fff;
+  background: #ff5722;
+}
+span.btn >a:not([href]) {
+  opacity: 0.5;
+}
+span.btn >a:not([href]):hover {
+  cursor: not-allowed;
+}
+span.btn.regular >a {
+  padding: 8px 12px 6px 12px;
+}
+span.btn.regular >a i {
+  margin-right: 4px;
+}
+span.btn.large >a {
+  padding: 12px 36px 10px 36px;
+}
+span.btn.large >a i {
+  margin-right: 8px;
+}
+span.btn.center {
+  display: block;
+  text-align: center;
+}
+div.btns {
+  margin: 0 -8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  overflow: visible;
+  line-height: 1.8;
+}
+div.btns,
+div.btns p,
+div.btns a {
+  font-size: 0.8125rem;
+  color: #555;
+}
+div.btns b {
+  font-size: 0.875rem;
+}
+div.btns.wide>a {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+div.btns.fill>a {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  width: auto;
+}
+div.btns.around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+div.btns.center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+div.btns.grid2>a {
+  width: calc(100%/2 - 16px);
+}
+@media screen and (max-width: 1024px) {
+  div.btns.grid2>a {
+    width: calc(100%/2 - 16px);
+  }
+}
+@media screen and (max-width: 768px) {
+  div.btns.grid2>a {
+    width: calc(100%/2 - 16px);
+  }
+}
+@media screen and (max-width: 500px) {
+  div.btns.grid2>a {
+    width: calc(100%/1 - 16px);
+  }
+}
+div.btns.grid3>a {
+  width: calc(100%/3 - 16px);
+}
+@media screen and (max-width: 1024px) {
+  div.btns.grid3>a {
+    width: calc(100%/3 - 16px);
+  }
+}
+@media screen and (max-width: 768px) {
+  div.btns.grid3>a {
+    width: calc(100%/3 - 16px);
+  }
+}
+@media screen and (max-width: 500px) {
+  div.btns.grid3>a {
+    width: calc(100%/1 - 16px);
+  }
+}
+div.btns.grid4>a {
+  width: calc(100%/4 - 16px);
+}
+@media screen and (max-width: 1024px) {
+  div.btns.grid4>a {
+    width: calc(100%/3 - 16px);
+  }
+}
+@media screen and (max-width: 768px) {
+  div.btns.grid4>a {
+    width: calc(100%/3 - 16px);
+  }
+}
+@media screen and (max-width: 500px) {
+  div.btns.grid4>a {
+    width: calc(100%/2 - 16px);
+  }
+}
+div.btns.grid5>a {
+  width: calc(100%/5 - 16px);
+}
+@media screen and (max-width: 1024px) {
+  div.btns.grid5>a {
+    width: calc(100%/4 - 16px);
+  }
+}
+@media screen and (max-width: 768px) {
+  div.btns.grid5>a {
+    width: calc(100%/3 - 16px);
+  }
+}
+@media screen and (max-width: 500px) {
+  div.btns.grid5>a {
+    width: calc(100%/2 - 16px);
+  }
+}
+div.btns a {
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  margin: 8px;
+  margin-top: calc(1.25 * 16px + 32px);
+  min-width: 120px;
+  font-weight: bold;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 8px;
+  text-align: center;
+  background: #f6f6f6;
+  border-radius: 4px;
+}
+div.btns a>img:first-child,
+div.btns a>i:first-child {
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  height: 64px;
+  width: 64px;
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+  margin: 16px 8px 4px 8px;
+  margin-top: calc(-1.25 * 16px - 32px);
+  border: 2px solid #fff;
+  background: #fff;
+  line-height: 60px;
+  font-size: 28px;
+}
+div.btns a>img:first-child.auto,
+div.btns a>i:first-child.auto {
+  width: auto;
+}
+div.btns a>i:first-child {
+  color: #fff;
+  background: #2196f3;
+}
+div.btns a p,
+div.btns a b {
+  margin: 0.25em;
+  font-weight: normal;
+  line-height: 1.25;
+  word-wrap: break-word;
+}
+div.btns a b {
+  font-weight: bold;
+  line-height: 1.3;
+}
+div.btns a img {
+  margin: 0.4em auto;
+}
+div.btns a:not([href]) {
+  cursor: default;
+  color: inherit;
+}
+div.btns a[href]:hover {
+  background: rgba(255,87,34,0.15);
+}
+div.btns a[href]:hover,
+div.btns a[href]:hover b {
+  color: #ff5722;
+}
+div.btns a[href]:hover>img:first-child,
+div.btns a[href]:hover>i:first-child {
+  transform: scale(1.1) translateY(-8px);
+  box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+}
+div.btns a[href]:hover>i:first-child {
+  background: #ff5722;
+}
+div.btns.circle a>img:first-child,
+div.btns.circle a>i:first-child {
+  border-radius: 32px;
+}
+div.btns.rounded a>img:first-child,
+div.btns.rounded a>i:first-child {
+  border-radius: 16px;
+}
